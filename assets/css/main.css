@@ -1,6 +1,7 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Raleway|Montserrat:700");
 
+
 /*
 	Indivisible by Pixelarity
 	pixelarity.com | hello@pixelarity.com
@@ -856,10 +857,10 @@ input, select, textarea {
 			}
 
 				ul.actions.animated.spinY li a.active {
-					-moz-transform: rotateY(480deg);
-					-webkit-transform: rotateY(480deg);
-					-ms-transform: rotateY(480deg);
-					transform: rotateY(480deg);
+					-moz-transform: rotateY(180deg);
+					-webkit-transform: rotateY(180deg);
+					-ms-transform: rotateY(180deg);
+					transform: rotateY(180deg);
 				}
 
 		ul.actions.animated.spinX li {
@@ -877,10 +878,10 @@ input, select, textarea {
 			}
 
 				ul.actions.animated.spinX li a.active {
-					-moz-transform: rotateX(480deg);
-					-webkit-transform: rotateX(480deg);
-					-ms-transform: rotateX(480deg);
-					transform: rotateX(480deg);
+					-moz-transform: rotateX(180deg);
+					-webkit-transform: rotateX(180deg);
+					-ms-transform: rotateX(180deg);
+					transform: rotateX(180deg);
 				}
 
 /* Icons */
