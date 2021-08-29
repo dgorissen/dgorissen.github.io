@@ -176,7 +176,7 @@
 				<!-- Projects -->
 				<article id="projects" class="panel secondary">
 					<div class="image">
-						<img src="images/projects.jpg" alt="" data-position="center center" />
+						<img src="images/projects.png" alt="" data-position="center center" />
 					</div>
 					<div class="content">
 						<ul class="actions animated spinX">
@@ -187,7 +187,14 @@
 							<header>
 								<h2>Projects</h2>
 							</header>
-							<p>The main past, present, and side projects I have worked on and can publicly talk about.</p>
+							<p>The main projects I have worked on and can publicly talk about.
+								<ul>
+									<li>Active Projects</li>
+									<li>Past Projects</li>
+									<li>Other Projects</li>
+									<li>Side Projects</li>
+								</ul>
+							</p>
 
 							<div id="projects_div">
 								<h3>Active Projects</h3>
@@ -195,20 +202,83 @@
 									<table>
 										<tbody>
 											<tr>
-												<td><a href="https://dirkgorissen.com/2016/07/18/from-drones-to-driving/"><img
-															src="images/projects/bbc.png" width="110" height="110" /></a></td>
-												<td><strong><a href="https://dirkgorissen.com/2016/07/18/from-drones-to-driving/">Mobile
-															Autonomy</a></strong>.
-													A range of projects around machine learning, computer vision, and related topics within the
-													context
-													of
-													self driving vehicles and mobile autonomy.</td>
+												<td><img src="images/projects/clare.png" width="110" height="160" /></td>
+												<td><p>
+													<strong>CLARE</strong>, short for Come Look At Robot Entertainment, is an interactive robot I
+														designed together with the kids and am have been working on for quite some time on the side. Its
+														mostly for fun and to expose the kids to robotics but also allows me to scratch that technical itch
+														as my professional life ventures into documents, spreadsheets, powerpoint, and meetings.
+												</p>
+													
+													<p>
+														I designed CLARE fully from scratch, including all CAD, wiring, coding, and even some custom
+														PCBs. Its printed on my home 3D printer and features multiple cameras, face detection and
+														tracking, interactive voice commands, LCD screen, LEDs, and fart detector. It can be controlled
+														with an RC remote or (eventually) move autonomously using SLAM.
+													</p></td>
 											</tr>
+											<tr>
+												<td><img src="images/projects/pycel.jpeg" width="110" height="110" />
+												</td>
+												<td><p>
+													<strong><a
+																href="http://dirkgorissen.com/2011/10/19/pycel-compiling-excel-spreadsheets-to-python-and-making-pretty-pictures/">Pycel</a>.</strong> This
+														grew out of the frustration of dealing with Excel spreadsheets as part of the UAV (drone) design
+														workflow. They were platform dependent, hard to automate and parallellise. The result was a
+														compiler
+														that could take an excel spreadsheet we used for aircraft sizing and compile it into stand alone
+														python
+														code for running on our cluster.
+												</p> <p>
+													While my own need has passed, the project has been picked up by
+														the community and is still active on github.
+												</p></td>
+											</tr>
+											<tr>
+												<td><img title="sumo-hourglass-compact"
+														src="http://elazungu.wordpress.com/files/2009/12/sumo-hourglass-compact.png" width="110"
+														height="110" /></td>
+												<td>The<strong> <a href="http://sumo.intec.ugent.be/SUMO">SUMO Toolbox</a></strong> is a Matlab
+													toolbox that I developed as part of my PhD in 2010. It											automatically builds accurate <a href="http://en.wikipedia.org/wiki/Surrogate_model">surrogate
+														models</a> of a given data source within the accuracy and time constraints set by the user.
+													The
+													toolbox minimizes the number of data points (which it selects automatically) since they are
+													usually
+													expensive.
+													<p>Applied to a very wide range of disciplines and projects, including metallurgy (with <a
+														href="http://www.arcelormittal.com/">Arcelor Mittal</a>), automotive (with <a
+														href="http://www.bmw.com/">BMW</a>), and semiconductors (with <a
+														href="http://www.freescale.com/">Freescale</a>). 
+												</p>
+												<p>While quite old now, it implemented many ideas which later became fashionable again with the rise of deep learning. It is still active and currently in use in many companies and
+														universities worldwide.</p>
+													
+												</td>
+											</tr>
+											<tr>
+												<td><img src="images/projects/litter.jpg" width="110" height="110" />
+												</td>
+												<td><strong>Litter Robot</strong>. Annoyed by the litter lying around public parks I have been
+													brooding
+													on
+													the idea of an autonomous litter robot for a long time. Now slowly working on putting the system
+													together though its been somewhat highjacked with my work on CLARE (above).</td>
+											</tr>
+							
+										</tbody>
+									</table>
+								</div>
+							
+								<h3>Past Projects</h3>
+								<div class="table-wrapper">
+									<table>
+										<tbody>
 											<tr>
 												<td><img src="images/projects/orang.png" width="110" height="110" /></td>
 												<td><strong><a
 															href="http://dirkgorissen.com/2019/01/06/wheres-pinoh-tracking-orangutans-with-drones-and-gnu-radio/">Airborne
-															Animal Tracking</a></strong>. This is a project with International Animal Rescue. As
+															Animal Tracking</a></strong>,  a project with <a
+														href="https://www.internationalanimalrescue.org/">International Animal Rescue</a>. As
 													part of
 													an
 													animal welfare and ecological research project, orangutans in Borneo are implanted with VHF
@@ -219,16 +289,8 @@
 													manually
 													navigating the jungle to pick up signals is extremely cumbersome. Better coverage can be
 													obtained by
-													flying above the canopy with a UAV mounted receiver and homing system.</td>
+													flying above the canopy with a drone mounted receiver and homing system.</td>
 											</tr>
-										</tbody>
-									</table>
-								</div>
-							
-								<h3>Past Projects</h3>
-								<div class="table-wrapper">
-									<table>
-										<tbody>
 											<tr>
 												<td><img src="images/projects/130000010300110_debug1.png" width="110" height="110" /></td>
 												<td><strong>Image Processing</strong>. An project for the <a href="http://www.cam.ac.uk/">University
@@ -238,7 +300,7 @@
 													millions of scanned 16th, 17th, and 18th century books.</td>
 											</tr>
 											<tr>
-												<td><img src="images/projects/gpr.png" width="110" height="110" />
+												<td><img src="images/projects/gpr_drone.jpg" width="110" height="110" />
 												</td>
 												<td><strong>Airborne GPR</strong>. In many parts of the world unexploded ordnance and landmines
 													still
@@ -247,16 +309,18 @@
 													developed to
 													tackle the project of landmine detection yet the clearing rate is still fairly low and the risks
 													remain
-													very real. This project is about building an integrated UAV based Ground Penetrating Radar
+													very real. In this project I worked on an integrated UAV based Ground Penetrating Radar
 													system
 													for
-													use in landmine detection as well as utilities, law enforcement, etc.</td>
+													use in landmine detection as well as utilities, law enforcement, etc. The worlds first system of its kind.</td>
 											</tr>
 											<tr>
 												<td><img src="images/projects/with0.png" width="110" height="110" /></td>
-												<td><strong>GPR-ML</strong>. Given a stream of GPR data in the context of demining there is still
+												<td><strong>GPR-ML</strong>. Given a stream of Ground Penetrating Radar (GPR) data in the context of
+													demining (see previous project) there is still
 													the
-													significant challenge of identifying landmines amongst the subsurface clutter. This project is
+													significant challenge of identifying landmines amongst the subsurface clutter. This project was
+													about
 													tackling
 													the challenge through the use of real and simulated data and exploiting recent advances in
 													(deep)
@@ -264,7 +328,7 @@
 											</tr>
 											<tr>
 												<td><img src="images/projects/graph.png" width="110" height="110" /></td>
-												<td><strong>Anomaly Detection</strong>. A project with a large engineering company where the
+												<td><strong>Anomaly Detection</strong>. A project with a Fortune 500 engineering company where the
 													objective
 													is to
 													find anomalies and recurring patterns in event streams and explore their predictive power.</td>
@@ -277,42 +341,39 @@
 														Robotics Lab</a> whose aim is to demonstrate a true swarming capability (i.e., not
 													multi-robot)
 													for
-													applications that involve maximizing area coverage. The core system is built around <a
-														href="http://www.ros.org/">ROS </a>with hardware from <a
-														href="http://erlerobotics.com">Erlebotics</a>.</td>
+													applications that involve maximizing area coverage.</td>
 											</tr>
 											<tr>
 												<td><img src="images/projects/rtk_figure_8.jpg" width="110" height="110" />
 												</td>
-												<td><strong>Accurate Positioning</strong>. In any UAV application good positioning or localization
+												<td><strong>Accurate Drone Positioning</strong>. In any drone application good positioning or
+													localization
 													is
 													key in
 													order for the sensor data to be processed sensibly. There are many ways of estimating position.
 													This
-													project is specifically about the integration of a commercial grade RTK GPS receiver and
-													exploring
-													monocular visual SLAM (SVO &amp; LSD in particular).</td>
+													project looked at integrating RTK and monocular visual SLAM into a custom drone platform.</td>
 											</tr>
 											<tr>
 												<td><img src="images/projects/emi.png" width="110" height="110" /></td>
 												<td><strong>Airborne EMI sensor</strong>. The two main sensor modalities used to detect landmines
 													are
-													GPR
-													and EMI (i.e., metal detector). This project explores the feasibility of having a UAV mounted
+													Ground Penetrating Radar (GPR)
+													and EMI (i.e., metal detector). This project explored the feasibility of having a UAV mounted
 													active
 													or
-													passive EMI sensor. While dubious initially it turns out a useful demonstrator system can be
-													built.
+													passive EMI sensor. <a href="https://diydrones.com/profiles/blogs/drone-based-metal-detector-proof-of-concept">A working prototype was built</a>, to my knowledge the first in the world.
 												</td>
 											</tr>
 											<tr>
-												<td><img title="sumo-hourglass-compact" src="images/projects/misc.png" width="110" height="110" />
+												<td><img src="images/projects/misc.png" width="110" height="110" />
 												</td>
-												<td>While a scientist at BAE Systems Research I worked on a wide range of projects. Unfortunately,
-													due
-													to
-													the nature of the work there is little I can share publicly.
-													<p> </p>
+												<td><p>
+													While a scientist at BAE Systems Research I worked on a wide range of projects. Unfortunately,
+														due
+														to
+														the nature of the work there is little I can share publicly.
+												</p>
 													<p>Projects were typically related to my specific areas of interest. This includes data fusion,
 														big
 														data
@@ -323,7 +384,7 @@
 											</tr>
 											<tr>
 												<td><img title="orichd" src="images/projects/orchid.png" width="110" height="110" /></td>
-												<td><a href="http://www.orchid.ac.uk/"><strong>Orchid</strong></a>. A collaboration between the
+												<td><strong>Orchid</strong>. A collaboration between the
 													University
 													of Southampton, University of Oxford, University of Nottingham, The Australian Center for Field
 													Robotics, BAE Systems, Secure Meters UK, and Rescue Global.
@@ -368,51 +429,31 @@
 												<td><img src="images/projects/nlp.jpg" width="110" height="110" />
 												</td>
 												<td><strong>GALLOP</strong>: Genetic Algorithms for Linguistic Learner Optimization is a python
-													package
-													for
-													feature selection and hyperparameter optimization for Natural Language Processing (<a
-														href="http://en.wikipedia.org/wiki/Natural_language_processing">NLP</a>) models.
+													package I developed for
+													feature selection and hyperparameter optimization for Natural Language Processing models.
 													<p> </p>
-													<p>Gallop provides a custom genetic algorithm (based on <a
-															href="https://code.google.com/p/deap/">DEAP</a>) that can be used to optimize the
-														hyperparameters of models such as <a href="http://ilk.uvt.nl/timbl/">Timbl</a>, <a
-															href="http://svmlight.joachims.org">SVMLight</a> and <a
-															href="http://crfpp.googlecode.com/svn/trunk/doc/index.html">CRF++</a>. Gallop also
+													<p>Gallop provides a custom genetic algorithm that can be used to optimize the
+														hyperparameters of models such as Timbl, SVMLight, and CRF++. Gallop also
 														supports
 														evolutionary selection of features or feature groups and can be run on a standalone machine
-														or
-														<a href="http://www.adaptivecomputing.com/products/open-source/torque/">Torque</a>
-														compatible
+														or Torque compatible
 														cluster.
 													</p>
 												</td>
 											</tr>
 											<tr>
-												<td><img src="images/projects/pycel.jpeg" width="110" height="110" />
-												</td>
-												<td><strong><a
-															href="http://dirkgorissen.com/2011/10/19/pycel-compiling-excel-spreadsheets-to-python-and-making-pretty-pictures/">Pycel</a>.</strong> This
-													grew out of the frustration of dealing with Excel spreadsheets as part of the UAV (drone) design
-													workflow. They were platform dependent, hard to automate and parallellise. The result was a
-													compiler
-													that could take an excel spreadsheet we used for aircraft sizing and compile it into stand alone
-													python
-													code for running on our cluster.</td>
-											</tr>
-											<tr>
 												<td><img src="images/projects/decodecfd1.png" width="110" height="110" />
 												</td>
 												<td><strong>DECODE</strong>: Decision Environment for Complex Design Evaluation. An <a
-														href="http://www.epsrc.ac.uk">ESPRC </a>funded research project where we are developing an
-													<a title="“Click here” to design and build your UAV"
-														href="http://elazungu.wordpress.com/2011/12/08/click-here-to-design-and-build-your-uav/">agile
+														href="http://www.epsrc.ac.uk">ESPRC </a>funded research project where we developed an
+													<a href="http://elazungu.wordpress.com/2011/12/08/click-here-to-design-and-build-your-uav/">agile
 														UAV
-														design environment</a> and <a title="SULSA in the New Scientist – Printed UAVs"
-														href="http://elazungu.wordpress.com/2011/07/28/decode-in-the-new-scientist-printed-uavs/">manufacturing
+														design environment</a> and <a
+														href="https://www.newscientist.com/article/dn20737-3d-printing-the-worlds-first-printed-plane/?ignored=irrelevant">manufacturing
 														process</a>. Close ties with the <a
-														href="http://www.soton.ac.uk/ses/research/mshpci/index.html">Microsoft Institute for High
-														Performance Computing</a>, <a href="http://www.rolls-royce.com/">Rolls-Royce</a>, <a
-														href="http://www.airbus.com">Airbus</a>, and the <a href="http://www.bbc.co.uk">BBC</a>.
+														href="https://www.southampton.ac.uk/engineering/research/groups/CED/microsoft_institute_for_high_performance_computing.page">Microsoft
+														Institute for High
+														Performance Computing</a>, Rolls-Royce, Airbus, and the BBC.
 													<p> </p>
 													<p>Multiple aircraft have been built and flown successfully and our work has been <a
 															href="http://dirkgorissen.com/2012/08/30/iflyer-uav-olympics-blue-peter/">covered
@@ -438,8 +479,7 @@
 											<tr>
 												<td><img src="images/projects/mdo.jpg" width="110" height="110" />
 												</td>
-												<td><strong>MDOW</strong> was a project in collaboration with <a
-														href="http://www.airbus.com">Airbus</a>
+												<td><strong>MDOW</strong> was a project in collaboration with Airbus
 													that took a non-conventional view to solving the <a
 														href="http://en.wikipedia.org/wiki/Multidisciplinary_design_optimization">Multidisciplinary
 														Design
@@ -448,26 +488,6 @@
 													coordinate the activities of the domain level optimizers instead of a numeric optimizer. This
 													allowed
 													for more traceability and a human-in-the-loop.</td>
-											</tr>
-											<tr>
-												<td><img title="sumo-hourglass-compact"
-														src="http://elazungu.wordpress.com/files/2009/12/sumo-hourglass-compact.png" width="110"
-														height="110" /></td>
-												<td>The<strong> <a href="www.sumowiki.intec.ugent.be">SUMO Toolbox</a></strong> is a Matlab toolbox
-													that
-													automatically builds accurate <a href="http://en.wikipedia.org/wiki/Surrogate_model">surrogate
-														models</a> of a given data source within the accuracy and time constraints set by the user.
-													The
-													toolbox minimizes the number of data points (which it selects automatically) since they are
-													usually
-													expensive.
-													<p> </p>
-													<p>Applied to a very wide range of disciplines and projects, including metallurgy (with <a
-															href="http://www.arcelormittal.com/">Arcelor Mittal</a>), automotive (with <a
-															href="http://www.bmw.com/">BMW</a>), and semiconductors (with <a
-															href="http://www.freescale.com/">Freescale</a>). Currently in use in many companies and
-														universities.</p>
-												</td>
 											</tr>
 											<tr>
 												<td><img src="images/projects/lna.png" width="110" height="110" />
@@ -500,34 +520,26 @@
 									</table>
 								</div>
 							
-								<h3>Side Projects</h3>
+								<h3>Other Projects</h3>
+							
 								<div class="table-wrapper">
 									<table>
 										<tbody>
 											<tr>
-												<td><img src="images/projects/litter.jpg" width="110" height="110" />
-												</td>
-												<td><strong>Litter Robot</strong>. Annoyed by the litter lying around public parks I have been
-													brooding
-													on
-													the idea of an autonomous litter robot for a long time. Now slowly working on putting the system
-													together. A wonderfully challenging path through control, SLAM, computer vision, and more.</td>
-											</tr>
-											<tr>
 												<td><img src="images/projects/tennisball.jpg" width="110" height="110" /></td>
-												<td><strong><a href="https://dirkgorissen.com/2016/07/12/marine-litter-mapping/">Marine Litter
-															Awareness</a></strong>. Supporting The Plastic Drive in raising awareness around marine
+												<td><strong><a href="https://dirkgorissen.com/2016/07/12/marine-litter-mapping/">Marine Litter</a></strong>. Supporting The <a href="https://www.theplastictide.com/">Plastic Tide</a> in raising awareness around marine
 													litter.
 													Joined by Plymouth Marine Laboratory and, from Imperial College, the Ocean circulation lab. HPC
 													lab,
-													and <a href="http://www.imperial.ac.uk/dyson-robotics-lab">Dyson lab</a>.</td>
+													and <a href="http://www.imperial.ac.uk/dyson-robotics-lab">Dyson lab</a>. This later evolved into <a href="https://www.ellipsis.earth/">Ellipis Environmental</a></td>
 											</tr>
 											<tr>
 												<td><img src="images/projects/cat.png" width="110" height="110" />
 												</td>
 												<td><strong><a href="http://dirkgorissen.com/2015/12/24/deep-drone-v2/">Flying object
 															detector</a></strong>.
-													A small side project to leverage recent work in deep learning to build a real time, flying
+													A small side project to explore recent work (at the time) in deep learning to build a real
+													time, flying
 													object
 													detector.</td>
 											</tr>
@@ -541,70 +553,6 @@
 													can
 													be
 													democratised to facilitate this.</td>
-											</tr>
-											<tr>
-												<td><a href="images/projects/bigo.png"><img src="images/projects/bigo.png" width="110"
-															height="110" /></a>
-												</td>
-												<td>I organise the<strong> <a title="#bigoldn: London Big-O Algorithms Group"
-															href="http://dirkgorissen.com/2013/09/19/bigoldn-london-big-o-algorithms-group/">London
-															Big-O
-															Algorithms and Datastructures Meetup</a></strong>. A monthly meetup group that focuses
-													on
-													the
-													core algorithms and datastructres that underlie all of computer science. No hand waving and
-													no marketing
-													speak allowed. Contributions from all fields are welcome, from geology and fluid dynamics to
-													high
-													frequency trading and compilers.</td>
-											</tr>
-											<tr>
-												<td><img src="images/projects/classification.png" width="110" height="110" /></td>
-												<td>I co-organise the <strong><a href="http://www.meetup.com/London-Machine-Learning-Meetup/">London
-															Machine
-															Learning Meetup</a></strong>. With over 1600 members it brings together the London
-													Machine
-													Learning community and is one of London's most popular tech meetups.</td>
-											</tr>
-											<tr>
-												<td><img src="images/projects/fortunecookiecomputer.jpg" alt="FortuneCookieComputer" width="110"
-														height="110" /></td>
-												<td><strong><a title="Notes on the Workshop for Research Software Engineers"
-															href="http://dirkgorissen.com/2013/09/23/notes-on-the-workshop-for-research-software-engineers/">UK
-															Society of Research Software Engineers. </a></strong>Software is a fundamental part of
-													research,
-													and research software engineers are fundamental to good software. Despite this, the role is not
-													well
-													understood in the research community and the missing reward structure in academia often drives
-													them
-													away. As a result, together with the Software Sustainability Institute a group of us founded the
-													UK
-													Society of Research Software Engineers. The aim is to promote the role of software and its
-													developers in
-													a research environment, promote best practices and tools, and fight for a better reward
-													structure
-													and
-													career path.</td>
-											</tr>
-											<tr>
-												<td><img src="images/projects/stemamb.png" width="110" height="110" />
-												</td>
-												<td><strong><a title="RHoKers Working with MSF in the Philippines"
-															href="http://www.stemnet.org.uk/ambassadors/">STEM Ambassador. </a></strong>For many
-													years I
-													have been working with schools and charities to talk about the research I have been involved in
-													and
-													to
-													get students interested in <a href="http://en.wikipedia.org/wiki/STEM_fields">STEM</a> subjects
-													and
-													careers. This has consisted of <a title="TEAtime"
-														href="http://dirkgorissen.com/2012/03/15/teatime/">lectures</a>, lessons, interview
-													training,
-													workshops, as well as longer term projects such as <a
-														title="Underwater Robots for STEM Outreach"
-														href="http://dirkgorissen.com/2013/12/10/underwater-robots-for-stem-outreach/">helping
-														students
-														build underwater robots</a>.</td>
 											</tr>
 											<tr>
 												<td><img src="images/projects/taarifa_logo.png" width="110" height="110" />
@@ -629,7 +577,101 @@
 													and Tanzania.</td>
 											</tr>
 											<tr>
-												<td><img src="images/projects/rhok.jpeg" width="110" height="110" />
+												<td><img src="images/projects/bieberscore.jpg" width="110" height="110" /></td>
+												<td><strong><a
+															href="http://dirkgorissen.com/2012/09/04/learning-clojure-whats-your-bieberscore/">Bieberscore</a></strong>.
+													A small side project to learn clojure. Given an artist the code will use the <a
+														href="http://www.last.fm/">Last.fm</a> API to retrieve the top songs, scrape the lyrics and
+													analyse
+													them to tell you how "complex" or "informative" they are.</td>
+											</tr>
+											<tr>
+												<td><img src="images/projects/courseralogo.png" width="110" height="110" /></td>
+												<td><a
+														href="http://dirkgorissen.com/2012/09/07/coursera-dl-a-coursera-download-script/"><strong>Coursera-dl</strong></a>.
+													A small library to archive Coursera videos locally and watch them offline.</td>
+											</tr>
+											<tr>
+												<td><img src="images/projects/domologo.png" width="110" height="110" /></td>
+												<td><strong><a href="http://domo.sf.net">Domo</a></strong> was an old university project started in
+													order to
+													learn C++/Qt and has long served its purpose. Domo is a music organizer which indexes digital
+													audio
+													sources and manages metadata in a relational database. Musicbrainz support is also available for
+													the
+													looking up of Audio CDs or for identifying tracks based on their TRM fingerprint.</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							
+								<h3>Outreach Projects</h3>
+							
+								<div class="table-wrapper">
+									<table>
+										<tbody>
+											<tr>
+												<td><a href="images/projects/bigo.png"><img src="images/projects/bigo.png" width="110"
+															height="110" /></a>
+												</td>
+												<td>For a number of years I started and organised the<strong> <a
+															title="#bigoldn: London Big-O Algorithms Group"
+															href="http://dirkgorissen.com/2013/09/19/bigoldn-london-big-o-algorithms-group/">London
+															Big-O
+															Algorithms and Datastructures Meetup</a></strong>. A monthly meetup group that focuses
+													on
+													the
+													core algorithms and datastructres that underlie all of computer science. No hand waving and
+													no marketing
+													speak allowed. Contributions from all fields are welcome, from geology and fluid dynamics to
+													high
+													frequency trading and compilers.</td>
+											</tr>
+											<tr>
+												<td><img src="images/projects/classification.png" width="110" height="110" /></td>
+												<td>I co-organised the <strong><a
+															href="http://www.meetup.com/London-Machine-Learning-Meetup/">London
+															Machine
+															Learning Meetup</a></strong>. With over 1600 members its Europe's largest ML community
+													and is one of London's most popular tech meetups.</td>
+											</tr>
+											<tr>
+												<td><img src="images/projects/rse.jpeg" alt="FortuneCookieComputer" width="110"
+														height="110" /></td>
+												<td><strong>I co-founded the <a href="https://society-rse.org/about/history/">UK
+															Society of Research Software Engineers. </a></strong>Software is a fundamental part of
+													research,
+													and research software engineers are fundamental to good software. Despite this, the role is not
+													well
+													understood in the research community and the missing reward structure in academia often drives
+													them
+													away. The aim of the society is to promote the role of software and its
+													developers in
+													a research environment, promote best practices and tools, and fight for a better reward
+													structure
+													and
+													career path.</td>
+											</tr>
+											<tr>
+												<td><img src="images/projects/stem.jpeg" width="110" height="60" />
+												</td>
+												<td><strong><a href="http://www.stemnet.org.uk/ambassadors/">STEM Ambassador. </a></strong>For many
+													years I
+													have been working with schools and charities to talk about the research I have been involved in
+													and
+													to
+													get students interested in <a href="http://en.wikipedia.org/wiki/STEM_fields">STEM</a> subjects
+													and
+													careers. This has consisted of lectures, lessons, interview
+													training,
+													workshops, as well as longer term projects such as <a
+														title="Underwater Robots for STEM Outreach"
+														href="http://dirkgorissen.com/2013/12/10/underwater-robots-for-stem-outreach/">helping
+														students
+														build underwater robots</a>.</td>
+											</tr>
+											<tr>
+												<td><img src="images/projects/rhok.jpeg" width="110" height="80" />
 												</td>
 												<td><strong><a title="RHoKers Working with MSF in the Philippines"
 															href="http://dirkgorissen.com/2013/12/17/rhokers-working-with-msf-in-the-philippines/">Random
@@ -648,24 +690,9 @@
 														of unmanned systems</a> in this area.</td>
 											</tr>
 											<tr>
-												<td><img src="images/projects/bieberscore.jpg" width="110" height="110" /></td>
-												<td><strong><a
-															href="http://dirkgorissen.com/2012/09/04/learning-clojure-whats-your-bieberscore/">Bieberscore</a></strong>.
-													A small side project to learn clojure. Given an artist the code will use the <a
-														href="http://www.last.fm/">Last.fm</a> API to retrieve the top songs, scrape the lyrics and
-													analyse
-													them to tell you how "complex" or "informative" they are.</td>
-											</tr>
-											<tr>
-												<td><img src="images/projects/courseralogo.png" width="110" height="110" /></td>
-												<td><a
-														href="http://dirkgorissen.com/2012/09/07/coursera-dl-a-coursera-download-script/"><strong>Coursera-dl</strong></a>.
-													A small library to archive Coursera videos locally and watch them offline.</td>
-											</tr>
-											<tr>
 												<td><img src="images/projects/southreach.png" width="110" height="110" />
 												</td>
-												<td><strong><a href="http://southreach.org">SouthREACH</a></strong> is a networking group I founded
+												<td><strong>SouthREACH</strong> is a networking group I founded
 													with
 													a
 													simple mission: To bring together researchers, engineers, computer scientists, and enthusiasts
@@ -674,24 +701,8 @@
 													and around the University of Southampton who want to apply their expertise to help solve
 													problems in
 													international development and ICT4D in a sustainable way. Later merged with the <a
-														href="http://www.southampton.ac.uk/C2G2/Community/globalsouth.html">Global South Forum</a>
+														href="http://gsf.soton.ac.uk/">Global South Forum</a>
 												</td>
-											</tr>
-											<tr>
-												<td><img src="images/projects/domologo.png" width="110" height="110" /></td>
-												<td><strong><a href="http://domo.sf.net">Domo</a></strong> was an old university project started in
-													order to
-													learn C++/Qt and has long served its purpose. Domo is a music organizer which indexes digital
-													audio
-													sources and manages metadata in a relational database. Musicbrainz support is also available for
-													the
-													looking up of Audio CDs or for identifying tracks based on their TRM fingerprint.</td>
-											</tr>
-											<tr>
-												<td><img src="images/projects/mdo1.jpg" width="110" height="110" />
-												</td>
-												<td>A collection of side projects and code snippets with various degrees of polish can be found in
-													my <a href="https://github.com/dgorissen">github repository</a>.</td>
 											</tr>
 										</tbody>
 									</table>
@@ -705,7 +716,7 @@
 				<!-- Contact -->
 					<article id="contact" class="panel secondary">
 						<div class="image">
-							<img src="images/pic04.jpg" alt="" data-position="bottom center" />
+							<img src="images/contact.jpg" alt="" data-position="bottom center" />
 						</div>
 						<div class="content">
 							<ul class="actions animated spinX">
@@ -715,24 +726,26 @@
 								<header>
 									<h2>Contact</h2>
 								</header>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="5"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><a href="" class="button submit">Send Message</a></li>
-									</ul>
+								<p>Please don't hesitate to reach out. I'm always up for a (virtual) coffee.</p>
+								<p>You can use the contact form below, <a href="mailto:info@machinedoing.com">email me direct</a>, or call me at +44 7763 806 809.</p>
+								<form
+									action="https://formspree.io/f/mzbyyzbz"
+									method="POST"
+									>
+									<label>
+										Name:
+										<input type="text" name="name">
+									</label>
+									<label>
+										Email:
+										<input type="email" name="_replyto">
+									</label>
+									<label>
+										Message:
+										<textarea name="message" rows="5"></textarea>
+									</label>
+									<!-- your other form fields go here -->
+									<button type="submit">Send Message</button>
 								</form>
 							</div>
 						</div>
