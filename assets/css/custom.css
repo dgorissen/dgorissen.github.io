@@ -3,11 +3,15 @@
     font-style: italic;
 }
 
-#projects_div {
+.projects_list {
     overflow: auto;
     height: 500px;
 }
 
-#projects_div td {
+.projects_list td {
     vertical-align: middle;
+}
+
+.project_links a {
+    cursor: pointer;
 }
