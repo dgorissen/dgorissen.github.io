@@ -746,8 +746,8 @@
 									<h2>Contact</h2>
 								</header>
 								<p>Please don't hesitate to reach out. I'm always up for a (virtual) coffee.</p>
-								<p>You can use the contact form below, <a href="mailto:info@machinedoing.com">email me direct</a>, or call me at +44 7763 806 809.</p>
-								<form
+								<p>You can use the contact form below or <a href="mailto:info@machinedoing.com">email me direct</a>, or call me at +44 7763 806 809.</p>
+								<form id="contact-form"
 									action="https://formspree.io/f/mzbyyzbz"
 									method="POST"
 									>
@@ -763,8 +763,14 @@
 										Message:
 										<textarea name="message" rows="5"></textarea>
 									</label>
-									<!-- your other form fields go here -->
-									<button type="submit">Send Message</button>
+									<!-- <button type="submit">Send Message</button> -->
+
+									<!-- Re-captcha enabled button -->
+									<button class="g-recaptcha" 
+										data-sitekey="6LcVJ0McAAAAAEOd_fwcVqmbqnOOXb-OqoNDAnFt" 
+										data-callback='contactFormSubmit' 
+										data-action='submit'>Send Message</button>
+
 								</form>
 							</div>
 						</div>
@@ -1038,7 +1044,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://www.google.com/recaptcha/api.js"></script>
 			<script src="assets/js/custom.js"></script>
-
 	</body>
 </html>
